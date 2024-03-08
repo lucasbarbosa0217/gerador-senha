@@ -1,7 +1,7 @@
-import './assets/css/style.css';
+
 import {randomNumber, randomString, randomSpecial, randomLowerCaseString} from "./modules/random"
-
-
+import "7.css/dist/7.css";
+import './assets/css/style.css';
 
 
 const gerarSenha = (qtdChar, funcoesAleatorias) => {
@@ -43,3 +43,4 @@ function gerar(event){
 
     resultado.innerText = gerarSenha(qtdChar, tipos)
 }
+

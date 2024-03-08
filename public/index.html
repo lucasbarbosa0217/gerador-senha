@@ -3,23 +3,60 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0s">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Modelo</title>
 </head>
 
 <body>
 
-  <form  class="container">
-    <h1>Escolha as opções da sua senha:</h1>
-    <label for="quantidade">Quantidade de caracteres: <input id="quantidade"type="number"></label>
-    <label for="maiuscula">Letras maiúsculas:<input type="checkbox" id="maiuscula"/></label>
-    <label for="minuscula">Letras minusculas:<input type="checkbox" id="minuscula"/></label>
-    <label for="especial">Caractéres especiais:<input type="checkbox" id="especial"></label>
-    <label for="numeros">Números:<input type="checkbox" id="numeros"></label>
-    <button id="gerar" type="button" >GERAR SENHA</button>
-    <p id="resultado" class="resultado"> </p>
-  </form>
+  
+
+
+  <div class="window active movivel " id="movivel" >
+    <div class="title-bar">
+      <div class="title-bar-text">Gerador de senhas</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body has-space" >
+      <form  class="container">
+      
+        <div class="field-row">
+          <label for="quantidade">Numero de caracteres</label>
+          <input placeholder="20" value="20" id="quantidade" type="number" />
+        </div>
+       
+<fieldset>
+  <legend>Opções da senha</legend>
+  <div class="field-row">
+    <input type="checkbox" id="maiuscula">
+    <label for="maiuscula">Letras maiúsculas</label>
+  </div>
+  <div class="field-row">
+    <input type="checkbox" id="minuscula">
+    <label for="minuscula">Letras minusculas</label>
+  </div>
+  <div class="field-row">
+   
+<input type="checkbox" id="especial">
+<label for="especial">Caracteres especiais</label>
+  </div>
+  <div class="field-row">
+   
+<input type="checkbox" id="numeros">
+<label for="numeros">Números</label>
+  </div>
+</fieldset>
+
+        <button id="gerar" type="button" >GERAR SENHA</button>
+        <p id="resultado" class="resultado"> </p>
+      </form>
+    </div>
+  </div>
   <script src="./assets/js/bundle.js"></script>
 </body>
 
