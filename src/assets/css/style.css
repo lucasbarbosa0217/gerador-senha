@@ -5,8 +5,8 @@ body{
   padding:0;
   margin:0;
   background-image: url("https://images.squarespace-cdn.com/content/v1/5aa96c579772aea9adaa2ef7/1572362224185-8E89SZ2NLEQJ3ZXTHSYF/Windows7EOL_StandardDesktop_102019");
-  height:100vh;
-  background-size: 100% 100%;
+  height:100dvh;
+  background-size: cover;
   background-position:center;
   justify-content:center;
   align-items:center;
@@ -16,9 +16,7 @@ body{
   max-width:550px;
   width:100%;
   margin:16px auto;
-
   position: absolute;
-
 }
 
 
